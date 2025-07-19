@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 1200px;
+    background-color:var(--Grey-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    background-color:var(--Grey-800);
+    width: 330px;
+    height: 63vh ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    font-family: outfit, sans-serif;
+    
+}
+#profile{
+    border-radius: 180px;
+    width: 80px;
+    margin-top: 30px;
+}
+h2{
+    color: var(--White);
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+#address{
+    color: var(--Green);
+    margin-top: 7px;
+    font-size: 12px;
+    opacity: 0.9;
+   
+}
+#add{
+    color:var(--White);
+    opacity: 0.7;
+    margin-top: 20px;
+    font-size: 13px;
+    text-align: center;
+    
+}
+#div{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   
+}
+.div{
+    width:260px ;
+    background-color: var(--Grey-700);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    font-size: 12px;
+    font-family: "young", sans-serif;
+}
+@media (max-width: 1150px) {
+    body{
+    height: 900px;
+    }
+   #container{
+    background-color:var(--Grey-800);
+    width: 320px;
+    height:520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    font-family: outfit, sans-serif;
+}
+    #profile{
+        width: 85px;
+        margin-top: 20px;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    #address{
+        font-size: 14px;
+    }
+    #add{
+        font-size: 15px;
+    }
+    
+}
